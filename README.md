@@ -8,6 +8,10 @@ LumberJack
 
 ## How it works?
 
+Sample running of the code:
+
+![Algo running](https://github.com/seanlowcy77/LumberJack-Hack/blob/master/Sample%20running%20of%20code.png)
+
 Basically we check if there is a branch above the LumberJack's head. If there is, we change sides and chop twice. We can do this by 
 using the Robot Java API, where we can check for the colour of the pixel above the LumberJack's head. If it is the same colour as a branch,
 we simply shift sides.
@@ -54,12 +58,24 @@ Color color_left = robot.getPixelColor(x,y);
 
 ## How to check the position of the pixel?
 
+These are the Right(Black) and Left(Red) pixel positions you should look for and enter into the code.
+
+![Pixel Positions](https://github.com/seanlowcy77/LumberJack-Hack/blob/master/LumberJack%20Pixel%20Position.png)
+
 For Mac Users simply use the Command-Shift-4 button - it will allow to check the coordinates of the pixels
 <br>If not we can also use the MouseEvent API:
 
 https://docs.oracle.com/javase/7/docs/api/java/awt/event/MouseEvent.html
 
 using the getLocationonScreen() function which will return the Point where your mouse is.
+
+## Warnings and Tips
+
+For Mac Users, please allow your editor 'Acessibility' as well as 'Screen Recording'. If you do not allow 'Screen Recording', the colour from the Pixel coordinate will simply be taken from your default Desktop.
+
+Also use
+<br>https://convertingcolors.com/rgb-color-143_96_43.html 
+to check the colours of your Pixels. Have fun!
 
 
 
